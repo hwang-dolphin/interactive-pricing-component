@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Interactive Pricing Component</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body onload="calculate()">
+    <div class="title">
+        <p>Simple, traffic-based pricing</p>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </div>
+
+
+    <div class="card">
+        <div class="card-top">
+            <div class="pageviews">
+                <p id="myPageviews"></p>
+            </div>
+
+            
+            <div class="slider-container">
+                <input type="range" min="1" max="5" value="1" class="slider" id="mySlider">
+            </div>
+        
+
+            <div class="price">
+                <p id="myPrice"></p>
+                <div>
+                    <p> / month</p>
+                </div>
+            </div>
+
+            <div class="bill">
+                <p>Monthly Billing</p>
+
+
+                <div>
+                    <label class="switch">
+                        <input type="checkbox" id="mySwitch" >
+                        <span class="switch-slider"></span>
+                    </label>
+                </div>
+
+              
+
+
+
+                <p>Yearly Billing</p>
+                <div class="discount">
+                    <p>-25%</p>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="card-bottom">
+            <div class="card-bottom-advantages">
+                <p>Unlimited websites</p>
+                <p>100% data ownership</p>
+                <p>Email reports</p>
+            </div>
+            <a class="button-trial" href="#">Start my trial</a>
+        </div>
+    </div>
+
+  
+    <script src="main.js"></script>
+</body>
+</html> 
